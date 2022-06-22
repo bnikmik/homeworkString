@@ -20,6 +20,7 @@ public class Main {
 
         //Задание №3
         System.out.println("Задание №3");
+
         String fullNameRight = fullName.replace('ё', 'e');
         System.out.println("Данные ФИО сотрудника — " + fullNameRight);
 
