@@ -21,9 +21,15 @@ public class Main {
         //Задание №3
         System.out.println("Задание №3");
 
-        String fullNameRight = fullName.replace('ё', 'e');
-        System.out.println("Данные ФИО сотрудника — " + fullNameRight);
 
 
+        String[] fullNameRight = fullName.split(" ");
+        for (String s : fullNameRight) {
+
+            if (s.contains("ё")) {
+                String fullNameEnd = s.replace("ё", "e");
+                System.out.print(fullNameEnd + " ");
+            } else System.out.print(s + " ");
+        }
     }
 }
